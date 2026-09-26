@@ -1,0 +1,8 @@
+,check_name,violations
+0,null in required column,0
+1,unknown arm,0
+2,conversion without visit,0
+3,spend without conversion,0
+4,conversion with zero spend,0
+5,negative history or spend,0
+6,recency outside 1-12 months,0
