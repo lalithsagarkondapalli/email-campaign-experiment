@@ -13,6 +13,13 @@
 
 ![results](reports/figures/email_experiment_results.png)
 
+## Decisions I owned
+
+- **Fixed the analysis plan before looking at outcomes** (primary metric, comparisons, multiple-testing correction), so the result couldn't be shaped after the fact.
+- **Checked the experiment before trusting it**: data-validation SQL, sample-ratio mismatch, covariate balance.
+- **Recommended *not* building uplift targeting.** The model worked no better than random targeting on held-out data, so the simpler blanket send wins. Saying no to extra machinery when the evidence doesn't support it is part of the job.
+- **Flagged the missing guardrail** (no unsubscribe/complaint data) as a blocker for scaling sends, rather than ignoring it.
+
 ## Analysis plan (fixed before looking at outcomes)
 
 | | |
